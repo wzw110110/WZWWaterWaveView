@@ -50,6 +50,7 @@ NSString * const CosImg = @"bag3.png";
 #pragma mark - layout
 
 - (void)layout {
+    
     [self addSubview:self.mainView];
     
     waterWaveHeight = self.mainView.bounds.size.height / 2.0;
