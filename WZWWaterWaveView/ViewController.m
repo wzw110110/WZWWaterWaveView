@@ -19,6 +19,7 @@
     [super viewDidLoad];
     
     
+    
     [WZWWaterWaveView show];
 
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 5.0 * NSEC_PER_SEC);
