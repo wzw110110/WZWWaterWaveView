@@ -19,6 +19,12 @@
     [super viewDidLoad];
     
     [WZWWaterWaveView show];
+    
+    // 延迟2秒执行：
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 5.0 * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [WZWWaterWaveView dismiss];
+    });
 }
 
 
